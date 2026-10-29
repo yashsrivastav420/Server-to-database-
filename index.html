@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yash Srivastav | Portfolio</title>
+
+    <!-- LINK 1: Connect HTML to CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- LINK 2: Connect HTML to JavaScript -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">YS<span>.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section class="hero" id="home">
+            <p class="eyebrow">BUSINESS · SALES · DATA ANALYTICS</p>
+
+            <h1>
+                Hi, I'm <span>Yash Srivastav.</span>
+            </h1>
+
+            <h2>Turning Data into Decisions.</h2>
+
+            <p class="intro">
+                I am pursuing an MIB at IMS Ghaziabad.
+                I combine business knowledge, sales experience,
+                leadership and data analytics to solve business problems.
+            </p>
+
+            <a href="#contact" class="button">Let's Connect</a>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section" id="about">
+            <p class="eyebrow">ABOUT ME</p>
+            <h2>Business Mindset. Data-Driven Thinking.</h2>
+
+            <p class="description">
+                My professional experience includes finance, sales
+                and healthcare data analytics. I enjoy converting
+                business data into meaningful insights and using
+                communication to solve practical business challenges.
+
+                I am also the Founder and President of the Data
+                Analytics Club at IMS Ghaziabad University Courses Campus.
+            </p>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="section" id="skills">
+            <p class="eyebrow">MY TOOLKIT</p>
+            <h2>Skills & Technologies</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">SQL</div>
+                <div class="skill-card">Advanced Excel</div>
+                <div class="skill-card">Power BI</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Data Analytics</div>
+                <div class="skill-card">Sales Analytics</div>
+                <div class="skill-card">Business Communication</div>
+                <div class="skill-card">Leadership</div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="section" id="experience">
+            <p class="eyebrow">MY JOURNEY</p>
+            <h2>Experience & Leadership</h2>
+
+            <div class="experience-list">
+
+                <article class="experience-card">
+                    <h3>AccuProbe Healthcare</h3>
+                    <p class="role">Healthcare Data Analytics</p>
+                    <p>
+                        Worked with business reporting, Excel automation,
+                        data validation, Power BI dashboards and SQL.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <h3>Bajaj Finance</h3>
+                    <p class="role">Sales Officer</p>
+                    <p>
+                        Experience in sales, customer interactions
+                        and financial product-related business activities.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <h3>Kotak Mahindra Bank</h3>
+                    <p class="role">Junior Associate</p>
+                    <p>
+                        Experience in banking operations and
+                        customer-facing financial services.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <h3>Data Analytics Club — IMS Ghaziabad</h3>
+                    <p class="role">Founder & President</p>
+                    <p>
+                        Building a student community around data,
+                        analytical thinking, practical projects and events.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <h3>Vadilal Industries</h3>
+                    <p class="role">Data Associate Intern</p>
+                    <p>
+                        Internship experience involving data-related
+                        business work.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section" id="contact">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Let's Connect</h2>
+
+            <p class="description">
+                Have a job opportunity, project or collaboration in mind?
+                Send me a message using the form below.
+            </p>
+
+            <form id="contact-form">
+
+                <label for="full_name">Full Name</label>
+                <input
+                    type="text"
+                    id="full_name"
+                    name="full_name"
+                    placeholder="Enter your full name"
+                    maxlength="100"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    maxlength="150"
+                    required
+                >
+
+                <label for="company">Company (Optional)</label>
+                <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Your company"
+                    maxlength="150"
+                >
+
+                <label for="purpose">Purpose of Contact</label>
+                <select id="purpose" name="purpose" required>
+                    <option value="">Select an option</option>
+                    <option value="Job Opportunity">Job Opportunity</option>
+                    <option value="Project">Project</option>
+                    <option value="Collaboration">Collaboration</option>
+                    <option value="Networking">Networking</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message..."
+                    maxlength="3000"
+                    required
+                ></textarea>
+
+                <button type="submit" class="button" id="submit-button">
+                    Send Message
+                </button>
+
+                <p id="form-status" role="status" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Yash Srivastav | Personal Portfolio</p>
+        <p>Built with HTML, CSS, JavaScript, Python and MySQL.</p>
+    </footer>
+
+</body>
+</html>
